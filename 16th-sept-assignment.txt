@@ -1,0 +1,154 @@
+Q1:- Create an image gallery that holds multiple images.
+
+sol:- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+</head>
+<body>
+
+<h2>Image Gallery</h2>
+
+<div>
+    <img src="image1.jpg" alt="Image 1">
+    <img src="image2.jpg" alt="Image 2">
+    <img src="image3.jpg" alt="Image 3">
+</div>
+
+</body>
+</html>
+
+Q2:- Use video and audio tags to display video and audio with the playback, and audio controls.
+ 
+ sol:- 
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video and Audio Player</title>
+</head>
+<body>
+
+<h2>Video Player</h2>
+<video controls>
+    <source src="sample_video.mp4" type="video/mp4"> 
+</video>
+
+<h2>Audio Player</h2>
+<audio controls>
+    <source src="sample_audio.mp3" type="audio/mp3">
+</audio>
+
+</body>
+</html>
+
+Q3:- Modify the previous assignment so that the audio and video play automatically as the page is loaded and they should play infinitely.
+
+sol:-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto-play Video and Audio with Infinite Loop</title>
+</head>
+<body>
+
+<h2>Auto-play Video with Infinite Loop</h2>
+<video controls autoplay loop>
+    <source src="sample_video.mp4" type="video/mp4">
+</video>
+
+<h2>Auto-play Audio with Infinite Loop</h2>
+<audio controls autoplay loop>
+    <source src="sample_audio.mp3" type="audio/mp3">
+</audio>
+
+</body>
+</html>
+
+Q4:-Use iframe to embed the PhysicsWallah Wikipedia page properly.
+
+sol:-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physics_Wallah wikipedia</title>
+</head>
+<body>
+  <iframe src="https://en.wikipedia.org/wiki/Physics_Wallah" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" height="400px"
+  width="600px"
+  allowfullscreen></iframe>
+</body>
+</html>
+
+Q5:- create a sign-in and sign-up form with proper validation.
+
+(a) sign-up form should have first name,last name,e-mail id,password and confirm-password,age,gender and terms and conditions fields in minimum.
+
+(b) sign-in form should have email and password fields.
+
+sol:-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    
+</head>
+<body>
+
+<h2>Sign Up</h2>
+<form id="signUpForm">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required>
+    <br>
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" required>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br>
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" required>
+    <br>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required>
+    <br>
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select>
+    <br>
+    <input type="checkbox" id="termsAndConditions" name="termsAndConditions" required>
+    <label for="termsAndConditions">I agree to the Terms and Conditions</label>
+    <br>
+    <button type="submit">Sign Up</button>
+</form>
+
+<h2>Sign In</h2>
+<form id="signInForm">
+    <label for="emailSignIn">Email:</label>
+    <input type="email" id="emailSignIn" name="emailSignIn" required>
+    <br>
+    <label for="passwordSignIn">Password:</label>
+    <input type="password" id="passwordSignIn" name="passwordSignIn" required>
+    <br>
+    <button type="submit">Sign In</button>
+</form>
+
+</body>
+</html>
